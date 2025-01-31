@@ -1,0 +1,138 @@
+/* div {
+    border: none !important;
+} */
+
+body {
+    background-image: url('../images/fon2.png');
+    background-repeat: repeat;
+}
+
+.center {
+    width: 1280px;
+    background-color: #EFF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-image: url(../images/w.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: bottom;
+    @media (max-width:1290px) {
+        width: 100%;
+    }
+}
+
+.top {
+    margin-top: 3.49vw;
+    height: 50px;
+    width: 98%;
+    display: flex;
+    justify-content: flex-start ;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.back {
+    background-color: #b8e2f7;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 24px;
+    /* font-weight:bold; */
+}
+
+.back:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+.mid {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foodcard {
+    width: 90%;
+    display: flex;
+    align-content: space-evenly ;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(224, 240, 255, 80%);
+    border-radius: 20px;
+}
+
+.foodinfo {
+    width: 95%;
+    margin-top: 20px;
+    font-size: calc(18px + 6 * (100vw - 320px) / 880);;
+}
+
+.name {
+    font-size:calc(24px + 8 * (100vw - 320px) / 880);
+    width: 95%;
+}
+
+.foodimage {
+    width: 70%;
+}
+
+.foodimage:hover {
+    transform: scale(1.04);
+    transition: all 0.2s;
+}
+
+.foodabout {
+    width: 95%;
+    margin-top: 20px;
+    font-size:calc(18px + 6 * (100vw - 320px) / 880);
+}
+
+.cc {
+    width: 90%;
+    font-size:calc(18px + 6 * (100vw - 320px) / 880);
+}
+
+.cc1 {
+    font-size:calc(24px + 8 * (100vw - 320px) / 880);
+    text-align: center;
+    width: 90%;
+}
+
+@media (max-width:1153px) {
+
+
+
+}
+
+@media (max-width:720px) {
+    body {
+        margin: 0 0;
+        background-image: url(../images/ww2.png);
+        /* background-color: ; */
+    }
+
+    .center {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    .filmimage {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (max-width:400px) {
+
+}

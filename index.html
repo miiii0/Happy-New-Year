@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body onload="time()">
+<div class="main">
+    <div class="" id="gir"></div>
+    <button onclick="lights()" class="girsh"><img src="images/pngegg.png" alt=""></button>
+    <div class="center">
+        <div class="top">
+            <div class="countdown">
+            <span style="font-size: calc(18px + 10 * (100vw - 320px) / 880);">До нового года осталось:</span>
+            </div>
+            <br>
+            <div class="timer" id="day" style="font-size: calc(25px + 20 * (100vw - 320px) / 880);"></div>
+            <div class="timer" id="hour" style="font-size: calc(25px + 20 * (100vw - 320px) / 880);"></div>
+            <div class="timer" id="min" style="font-size: calc(25px + 20 * (100vw - 320px) / 880);"></div>
+            <div class="timer" id="sec" style="font-size: calc(25px + 20 * (100vw - 320px) / 880);"></div>
+            <span class="aaa" style="font-size: calc(18px + 10 * (100vw - 320px) / 880); display: flex; width: 52.396vw; text-align: center;"><br>А пока предлагаем вам окунуться в новогоднее настроение с нашей подборкой новгогодних активностей</span>
+        </div>
+        <div class="mid">
+            <div class="snowblock"></div>
+            <div id="forcard" class="forcard">
+                <div class="forbut">
+                    <button onclick="snow()" class="snowbut" >Включить снег</button>
+                </div>
+                <div class="forbut">
+                    <button onclick="shuffle()" class="butshuf" >Подарочек</button>
+                </div>
+                <a href="films.html" id="card1" class="card1 card">
+                    <div class="imggift">
+                        <img src="images/gift1.png" alt="" width="100%" height="100%" style="object-fit: contain;">
+                    </div>
+                    <span style="font-size: 32px; width: 100%; text-align: center;">Фильмы</span>
+                </a>
+                <a href="recipe.html" class="card2 card">
+                    <div class="imggift">
+                        <img src="images/gift3.png" alt="" width="100%" height="100%" style="object-fit: contain;" >
+                    </div>
+                    <span style="font-size: 32px; width: 100%; text-align: center;">Рецепты</span>
+                </a>
+                <a href="games.html" class="card3 card">
+                    <div class="imggift">
+                        <img src="images/gift4.png" alt="" width="100%" height="100%" style="object-fit: contain;" >
+                    </div>
+                    <span style="font-size: 32px; width: 100%; text-align: center;">Игры</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/js1.js"></script>
+</html>

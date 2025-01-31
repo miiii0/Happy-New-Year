@@ -1,0 +1,299 @@
+/* .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('../images/fon2.png');
+    background-repeat: repeat;
+}   */
+
+/* div {
+    border: none !important;
+} */
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-image: url('../images/fon2.png');
+    background-repeat: repeat;
+}
+
+.center {
+    width: 1280px;
+    height: 100vh;
+    background-color: #EFF7FF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-image: url(../images/w.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width:1290px) {
+        width: 100%;
+    }
+}
+
+.girsh {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+
+.girshan {
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction:alternate;
+    /* animation-timing-function: cubic-bezier(0.41, 0.98, 0.54, 0.15); */
+    animation-timing-function: cubic-bezier(0.74,-0.01, 0.18, 0.99);
+
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.girsh:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+#gir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url('../gir.png');
+    height: 62px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none
+}  
+.gir_1 {
+    background-position: 0 0
+}  
+.gir_2 {
+    background-position: 0 -62px
+}  
+.gir_3 {
+    background-position: 0 -124px
+}
+
+.top {
+    margin-top: 3.49vw;
+    width: 53.125vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.countdown {
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.mid {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.forcard {
+    width: calc(1000px - 25vw);
+    max-width: 718px;
+    height: 588px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.card2 {
+    width: 240px;
+    height: 240px;
+    background-color: #E0F0FF;
+    border-radius: 22px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+.card3 {
+    width: 240px;
+    height: 240px;
+    background-color: #E0F0FF;
+    border-radius: 22px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+.card4 {
+    width: 240px;
+    height: 240px;
+    background-color: #E0F0FF;
+    border-radius: 22px;
+    text-decoration: none ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+.card1 {
+    width: 240px;
+    height: 240px;
+    background-color: #E0F0FF;
+    border-radius: 22px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.card {
+    display: none;
+
+}
+
+.butshuf {
+    font-size: calc(18px + 5 * (100vw - 320px) / 880);
+    background-color: #E0F0FF;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.butshuf:hover, .snowbut:hover {
+    /* transform: scale(1.2); */
+    background-color: #bfdaf3;
+    box-shadow:2px 2px 4px gray;
+    transition: all 0.2s;
+}
+
+.snowbut {
+    font-size: calc(18px + 5 * (100vw - 320px) / 880);
+    background-color: #E0F0FF;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.forbut {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.nowcard {
+    display: flex;
+}
+
+.imggift {
+    width: 173px;
+    height: 188px;
+}
+
+.timer {
+    color: #537FA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snowblock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/snow1.png), url(..//images/snow2.png), url(../images/snow3.png);
+    animation: snow 40s linear infinite;
+    display: none;
+}
+
+.snowon {
+    display: block;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 1800px 2000px, 1600px 1600px, 1400px 1200px;
+    }
+}
+
+
+@media (max-width:1153px) {
+    .top {
+        width: 80vw;
+    }
+
+    .aaa {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:720px) {
+    body {
+        margin: 0 0;
+        background-image: url(../images/ww2.png);
+        /* background-color: ; */
+    }
+
+    .center {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+
+}
+
+@media (max-width:599px) {
+    .card {
+        width: 200px;
+    }
+}
+
+@media (max-width:400px) {
+    .forcard {
+        justify-content: center;
+        height: 100%;
+    }
+
+    .card {
+        margin-top: 5%;
+    }
+}
